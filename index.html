@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM4 Packet Decoder — AMD GCN/RDNA & AGC Command Inspector</title>
+  <meta name="description" content="Interactive client-side AMD GCN/RDNA & PlayStation AGC PM4 Command Packet Stream Decoder, Inspector & AnyPS5 Bounds Auditor.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">PM4</div>
+      <div class="brand-text">
+        <h1>PM4 Packet Decoder</h1>
+        <div class="brand-subtitle">AMD GCN/RDNA & PlayStation AGC Command Stream Inspector</div>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <div class="control-group">
+        <label for="sample-select">Preset:</label>
+        <select id="sample-select" aria-label="Load Predefined Sample Stream">
+          <option value="SAMPLE_1_INDEXED_DRAW" selected>Sample 1: Indexed Mesh Draw Call</option>
+          <option value="SAMPLE_2_COMPUTE_DISPATCH">Sample 2: Compute Dispatch Grid</option>
+          <option value="SAMPLE_3_INDIRECT_BUFFER_DMA">Sample 3: Indirect Buffer & CP DMA</option>
+          <option value="SAMPLE_4_CORRUPTED_STREAM">Sample 4: Corrupted Stream (Auditor Test)</option>
+        </select>
+      </div>
+
+      <a href="https://github.com/slopgobblercobbler/pm4-packet-decoder" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div id="alert-container" style="display: none;"></div>
+
+    <!-- Dual Input Section -->
+    <section class="input-section">
+      <div class="input-tabs">
+        <button class="input-tab active" data-input-mode="file">Upload Command Buffer</button>
+        <button class="input-tab" data-input-mode="hex">Paste Hex Stream</button>
+      </div>
+
+      <div id="dropzone-container">
+        <div id="dropzone" class="dropzone">
+          <div class="dropzone-icon">⚡</div>
+          <div class="dropzone-text">Drag & drop raw PM4 command stream binary, or click to browse</div>
+          <div class="dropzone-hint">Accepts GCN/RDNA/AGC ring buffer dumps, indirect buffer blocks, or raw dwords. 100% Client-Side.</div>
+          <input type="file" id="file-input" style="display: none;">
+        </div>
+        <div id="file-info-label" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-blue); margin-top: 8px;"></div>
+      </div>
+
+      <div id="hex-input-container" style="display: none; flex-direction: column; gap: 8px;">
+        <textarea id="hex-textarea" class="hex-textarea" placeholder="Paste PM4 hex bytecode (supports C arrays 0x14, 0x00..., space-separated or raw hex)"></textarea>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div class="preset-chips" style="margin-top: 0;">
+            <span class="chip" data-sample="SAMPLE_1_INDEXED_DRAW">Indexed Draw</span>
+            <span class="chip" data-sample="SAMPLE_2_COMPUTE_DISPATCH">Compute Dispatch</span>
+            <span class="chip" data-sample="SAMPLE_3_INDIRECT_BUFFER_DMA">Indirect Buffer & DMA</span>
+            <span class="chip" data-sample="SAMPLE_4_CORRUPTED_STREAM">Corrupted Stream</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button id="btn-format-hex" class="btn btn-sm">Format Hex</button>
+            <button id="btn-clear-hex" class="btn btn-sm">Clear</button>
+            <button id="btn-decode-hex" class="btn btn-sm btn-primary">Decode Stream</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telemetry Bar -->
+    <section class="telemetry-bar">
+      <div class="stat-card">
+        <div class="stat-label">Total PM4 Packets</div>
+        <div id="stats-total" class="stat-value">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Type 3 Commands</div>
+        <div id="stats-type3" class="stat-value" style="color: #ff5a1f;">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Buffer Payload Size</div>
+        <div id="stats-bytes" class="stat-value">0 bytes</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">AnyPS5 CP Auditor</div>
+        <div id="stats-audit" class="stat-value ok">PASS</div>
+      </div>
+    </section>
+
+    <!-- Stream Explorer -->
+    <div class="stream-layout">
+      <!-- Packet Timeline Sidebar -->
+      <div class="packet-list-panel">
+        <div class="panel-header">
+          <span>Packet Sequence</span>
+          <input type="text" id="packet-search" placeholder="Filter..." style="background: var(--bg-primary); border: 1px solid var(--border-color); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; width: 110px;">
+        </div>
+        <div id="packet-list"></div>
+      </div>
+
+      <!-- Main Packet Inspector & Auditor -->
+      <div>
+        <div class="packet-detail-panel" style="margin-bottom: 20px;">
+          <div id="packet-detail"></div>
+        </div>
+
+        <div class="packet-detail-panel" style="margin-bottom: 20px;">
+          <div id="audit-container"></div>
+        </div>
+
+        <div class="packet-detail-panel">
+          <div class="detail-title">Synchronized Hex Dump</div>
+          <div id="hex-container" class="hex-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Export Toolbar -->
+    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color);">
+      <button id="btn-export-disasm" class="btn btn-sm">Export Disassembly</button>
+      <button id="btn-export-json" class="btn btn-sm btn-primary">Export JSON</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      <strong>PM4 Packet Decoder</strong> — Production-grade client-side GPU command stream inspector hosted on
+      <a href="https://slopgobblercobbler.github.io/pm4-packet-decoder/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+      Licensed under <a href="https://github.com/slopgobblercobbler/pm4-packet-decoder/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>.
+    </p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

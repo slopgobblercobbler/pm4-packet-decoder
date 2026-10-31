@@ -1,0 +1,23 @@
+{
+  "name": "pm4-packet-decoder",
+  "version": "1.0.0",
+  "description": "Interactive client-side AMD GCN/RDNA & PlayStation AGC PM4 Command Packet Stream Decoder, Inspector & Bounds Auditor.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "pm4",
+    "amd",
+    "gcn",
+    "rdna",
+    "agc",
+    "playstation",
+    "command-processor",
+    "vulkan",
+    "gpu",
+    "relinker"
+  ],
+  "author": "slopgobblercobbler",
+  "license": "MIT"
+}
