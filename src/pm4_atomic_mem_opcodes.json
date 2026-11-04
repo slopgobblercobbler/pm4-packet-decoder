@@ -1,0 +1,6 @@
+{
+  "IT_ATOMIC_MEM": 30,
+  "TC_OP_ATOMIC_ADD": 1,
+  "TC_OP_ATOMIC_SUB": 2,
+  "TC_OP_ATOMIC_SWAP": 3
+}
