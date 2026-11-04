@@ -1,0 +1,6 @@
+{
+  "TC_ACTION_ENA": 1,
+  "TCC_ACTION_ENA": 2,
+  "KCACHE_ACTION_ENA": 4,
+  "ICACHE_ACTION_ENA": 8
+}
