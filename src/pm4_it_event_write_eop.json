@@ -1,6 +1,6 @@
 {
-  "opcode": 71,
-  "name": "IT_EVENT_WRITE_EOP",
-  "event_type": "BOTTOM_OF_PIPE_TS",
-  "address_space": "CACHE_FLUSH_AND_INV_TS"
+  "it_opcode": "IT_EVENT_WRITE_EOP",
+  "opcode_val": 71,
+  "category": "events",
+  "description": "End-of-pipe event write packet with timestamp interrupt"
 }
