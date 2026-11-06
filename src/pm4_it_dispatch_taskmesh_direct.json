@@ -1,0 +1,6 @@
+{
+  "it_opcode": "IT_DISPATCH_TASKMESH_DIRECT",
+  "opcode_val": 139,
+  "category": "mesh_shader",
+  "description": "Direct compute dispatch of task and mesh shader stages"
+}
