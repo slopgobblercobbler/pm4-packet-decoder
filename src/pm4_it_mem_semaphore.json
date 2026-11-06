@@ -1,0 +1,7 @@
+{
+  "opcode": "IT_MEM_SEMAPHORE",
+  "opcode_id": "0x39",
+  "sem_sel_signal": 0,
+  "sem_sel_wait": 1,
+  "use_mailbox_bit": 16
+}
