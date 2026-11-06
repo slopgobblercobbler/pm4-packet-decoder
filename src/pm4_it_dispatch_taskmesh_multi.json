@@ -1,0 +1,6 @@
+{
+  "opcode": 48,
+  "name": "IT_DISPATCH_TASKMESH_INDIRECT_MULTI",
+  "max_taskgroups": 2048,
+  "mesh_ring_buffer": true
+}
