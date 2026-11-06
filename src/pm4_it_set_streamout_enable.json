@@ -1,0 +1,5 @@
+{
+  "opcode": 61,
+  "name": "IT_SET_STREAMOUT_ENABLE",
+  "buffer_mask": "0x0f"
+}
