@@ -1,0 +1,5 @@
+{
+  "opcode": 158,
+  "name": "IT_LOAD_UCONFIG_REG",
+  "reg_count_mask": "0x0000FFFF"
+}
