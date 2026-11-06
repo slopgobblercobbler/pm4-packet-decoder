@@ -1,7 +1,6 @@
 {
-  "opcode": "IT_RELEASE_MEM",
-  "opcode_id": "0x3F",
-  "event_type_bottom_of_pipe": 0,
-  "cache_flush_and_inv_cb": "0x01",
-  "cache_flush_and_inv_db": "0x02"
+  "it_opcode": "IT_RELEASE_MEM",
+  "opcode_val": 89,
+  "category": "cache_coherence",
+  "description": "GPU memory release and cache writeback flush packet"
 }
