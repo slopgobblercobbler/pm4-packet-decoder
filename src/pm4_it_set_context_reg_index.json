@@ -1,0 +1,6 @@
+{
+  "it_opcode": "IT_SET_CONTEXT_REG_INDEX",
+  "opcode_val": 115,
+  "category": "context_registers",
+  "description": "Indexed context register block write opcode"
+}
