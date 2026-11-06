@@ -1,0 +1,7 @@
+{
+  "opcode": 46,
+  "name": "IT_DISPATCH_MESH_DIRECT",
+  "threadgroup_x": 32,
+  "threadgroup_y": 1,
+  "threadgroup_z": 1
+}
