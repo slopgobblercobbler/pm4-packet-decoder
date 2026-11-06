@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_NOP",
+  "opcode_hex": "0x10",
+  "type_3_packet_type": 3,
+  "max_nop_dwords": 16384
+}
