@@ -1,0 +1,10 @@
+{
+  "it_opcode": "IT_DISPATCH_DIRECT",
+  "opcode_val": 21,
+  "category": "compute",
+  "parameters": [
+    "dim_x",
+    "dim_y",
+    "dim_z"
+  ]
+}
