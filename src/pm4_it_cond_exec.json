@@ -1,7 +1,6 @@
 {
-  "opcode": "IT_COND_EXEC",
-  "opcode_hex": "0x44",
-  "compare_function_equal": 0,
-  "compare_function_not_equal": 1,
-  "compare_function_greater": 2
+  "opcode": 68,
+  "name": "IT_COND_EXEC",
+  "condition_cache_inv": true,
+  "pred_memory_space": "CP_REG_OR_MEM"
 }
