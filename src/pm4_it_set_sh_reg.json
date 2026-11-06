@@ -1,0 +1,6 @@
+{
+  "it_opcode": "IT_SET_SH_REG",
+  "opcode_val": 118,
+  "category": "sh_registers",
+  "description": "Direct shader register write packet"
+}
