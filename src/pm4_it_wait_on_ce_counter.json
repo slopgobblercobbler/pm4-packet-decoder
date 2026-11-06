@@ -1,0 +1,5 @@
+{
+  "opcode": "IT_WAIT_ON_CE_COUNTER",
+  "opcode_id": "0x5B",
+  "min_dwords": 0
+}
