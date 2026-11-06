@@ -1,7 +1,6 @@
 {
-  "opcode": "IT_EVENT_WRITE",
-  "opcode_hex": "0x46",
-  "event_type_sample_streamout": 1,
-  "event_type_cache_flush": 2,
-  "event_type_bottom_of_pipe": 3
+  "it_opcode": "IT_EVENT_WRITE",
+  "opcode_val": 70,
+  "category": "events",
+  "description": "Command processor pipeline event generation packet"
 }
