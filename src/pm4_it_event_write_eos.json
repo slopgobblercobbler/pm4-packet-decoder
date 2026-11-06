@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_EVENT_WRITE_EOS",
+  "opcode_id": "0x48",
+  "shader_type_cs": 0,
+  "shader_type_ps": 1
+}
