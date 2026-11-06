@@ -1,0 +1,7 @@
+{
+  "opcode": "IT_SET_RESOURCES",
+  "opcode_hex": "0x78",
+  "vmid_mask": "0x0F",
+  "queue_type_graphics": 0,
+  "queue_type_compute": 1
+}
