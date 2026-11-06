@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_LOAD_SH_REG",
+  "opcode_id": "0x5F",
+  "base_offset": "0x0000B000",
+  "supports_dma_load": true
+}
