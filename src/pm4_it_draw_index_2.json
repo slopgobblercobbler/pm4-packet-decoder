@@ -1,0 +1,6 @@
+{
+  "it_opcode": "IT_DRAW_INDEX_2",
+  "opcode_val": 54,
+  "category": "draw",
+  "description": "Secondary indexed draw packet with explicit index count"
+}
