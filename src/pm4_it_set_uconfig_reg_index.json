@@ -1,0 +1,5 @@
+{
+  "opcode": "IT_SET_UCONFIG_REG_INDEX",
+  "opcode_id": "0x9F",
+  "supports_uconfig_space": true
+}
