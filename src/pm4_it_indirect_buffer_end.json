@@ -1,0 +1,5 @@
+{
+  "opcode": 51,
+  "name": "IT_INDIRECT_BUFFER_END",
+  "pop_chain_stack": true
+}
