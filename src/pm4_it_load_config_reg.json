@@ -1,6 +1,5 @@
 {
   "opcode": "IT_LOAD_CONFIG_REG",
-  "opcode_hex": "0x38",
-  "base_address_bits": 48,
-  "count_mask": "0x3FFF"
+  "opcode_id": "0x60",
+  "base_offset": "0x00008000"
 }
