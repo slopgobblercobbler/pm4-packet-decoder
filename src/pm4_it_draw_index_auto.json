@@ -1,0 +1,6 @@
+{
+  "opcode": 45,
+  "name": "IT_DRAW_INDEX_AUTO",
+  "index_count_mask": "0x0fffffff",
+  "prim_type": "TRIANGLE_LIST"
+}
