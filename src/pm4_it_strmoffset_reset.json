@@ -1,0 +1,5 @@
+{
+  "opcode": "IT_STRMOFFSET_RESET",
+  "opcode_id": "0x35",
+  "stream_mask": "0x0F"
+}
