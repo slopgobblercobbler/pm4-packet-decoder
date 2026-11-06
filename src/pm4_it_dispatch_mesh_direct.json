@@ -1,7 +1,10 @@
 {
-  "opcode": 46,
-  "name": "IT_DISPATCH_MESH_DIRECT",
-  "threadgroup_x": 32,
-  "threadgroup_y": 1,
-  "threadgroup_z": 1
+  "it_opcode": "IT_DISPATCH_MESH_DIRECT",
+  "opcode_val": 138,
+  "category": "mesh_shader",
+  "parameters": [
+    "threadgroup_x",
+    "threadgroup_y",
+    "threadgroup_z"
+  ]
 }
