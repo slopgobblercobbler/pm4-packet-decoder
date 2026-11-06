@@ -4,8 +4,8 @@
 
 namespace pm4 {
 struct ItDumpConstRamDef {
-    static constexpr std::uint8_t opcode = 0x61;
+    static constexpr std::uint8_t opcode = 0x83;
     static constexpr std::string_view name = "IT_DUMP_CONST_RAM";
-    static constexpr std::string_view desc = "Dump constant RAM contents to GPU memory buffer";
+    static constexpr std::string_view desc = "Dump constant RAM cache contents to target memory buffer";
 };
 }
