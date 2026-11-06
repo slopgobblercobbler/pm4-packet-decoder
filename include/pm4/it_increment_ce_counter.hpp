@@ -4,8 +4,8 @@
 
 namespace pm4 {
 struct ItIncrementCeCounterDef {
-    static constexpr std::uint8_t opcode = 0x62;
+    static constexpr std::uint8_t opcode = 0x86;
     static constexpr std::string_view name = "IT_INCREMENT_CE_COUNTER";
-    static constexpr std::string_view desc = "Increment Constant Engine synchronization counter";
+    static constexpr std::string_view desc = "Increment constant engine synchronization synchronization counter";
 };
 }
