@@ -1,8 +1,6 @@
 {
-  "opcode": "IT_SET_BASE",
-  "opcode_id": "0x11",
-  "base_type_patch": 0,
-  "base_type_cs": 1,
-  "base_type_gs": 2,
-  "supports_64bit_gpu_va": true
+  "opcode": 17,
+  "name": "IT_SET_BASE",
+  "base_index_gs": 1,
+  "base_index_vs": 2
 }
