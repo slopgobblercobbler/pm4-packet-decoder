@@ -1,0 +1,6 @@
+{
+  "opcode": 32,
+  "name": "IT_SET_PREDICATION",
+  "pred_op_drain": 0,
+  "pred_op_clear": 1
+}
