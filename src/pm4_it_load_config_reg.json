@@ -1,5 +1,6 @@
 {
-  "opcode": "IT_LOAD_CONFIG_REG",
-  "opcode_id": "0x60",
-  "base_offset": "0x00008000"
+  "it_opcode": "IT_LOAD_CONFIG_REG",
+  "opcode_val": 102,
+  "category": "config_registers",
+  "description": "Loads config register block from memory address"
 }
