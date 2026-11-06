@@ -1,6 +1,5 @@
 {
-  "opcode": "IT_CLEAR_STATE",
-  "opcode_id": "0x12",
-  "min_dwords": 0,
-  "resets_context_registers": true
+  "opcode": 18,
+  "name": "IT_CLEAR_STATE",
+  "reset_all_contexts": true
 }
