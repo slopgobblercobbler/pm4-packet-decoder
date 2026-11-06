@@ -1,8 +1,6 @@
 {
-  "opcode": "IT_EVENT_WRITE_EOP",
-  "opcode_id": "0x47",
-  "data_sel_none": 0,
-  "data_sel_timestamp": 1,
-  "int_sel_none": 0,
-  "int_sel_interrupt": 1
+  "opcode": 71,
+  "name": "IT_EVENT_WRITE_EOP",
+  "event_type": "BOTTOM_OF_PIPE_TS",
+  "address_space": "CACHE_FLUSH_AND_INV_TS"
 }
