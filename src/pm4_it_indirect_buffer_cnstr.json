@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_INDIRECT_BUFFER_CNSTR",
+  "opcode_hex": "0x33",
+  "supports_chaining": true,
+  "requires_cache_sync": true
+}
