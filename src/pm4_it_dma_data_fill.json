@@ -1,0 +1,6 @@
+{
+  "opcode": 80,
+  "name": "IT_DMA_DATA_FILL",
+  "sync_engine": "CP_DMA",
+  "byte_alignment": 4
+}
