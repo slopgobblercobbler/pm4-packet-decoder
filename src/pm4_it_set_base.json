@@ -1,6 +1,6 @@
 {
-  "opcode": 17,
-  "name": "IT_SET_BASE",
-  "base_index_gs": 1,
-  "base_index_vs": 2
+  "it_opcode": "IT_SET_BASE",
+  "opcode_val": 99,
+  "category": "base_registers",
+  "description": "Sets base address register for indirect references"
 }
