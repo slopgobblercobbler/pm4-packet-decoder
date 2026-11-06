@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_SET_CONFIG_REG",
+  "opcode_id": "0x68",
+  "base_offset": "0x00008000",
+  "dword_count_mask": "0x0000FFFF"
+}
