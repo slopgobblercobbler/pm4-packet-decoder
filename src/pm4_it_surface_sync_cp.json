@@ -1,0 +1,7 @@
+{
+  "opcode": "IT_SURFACE_SYNC",
+  "opcode_id": "0x43",
+  "cb_clean_and_invalidate": "0x00000001",
+  "db_clean_and_invalidate": "0x00000002",
+  "tc_clean_and_invalidate": "0x00000008"
+}
