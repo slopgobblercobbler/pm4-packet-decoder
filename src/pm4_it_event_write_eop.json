@@ -1,0 +1,8 @@
+{
+  "opcode": "IT_EVENT_WRITE_EOP",
+  "opcode_id": "0x47",
+  "data_sel_none": 0,
+  "data_sel_timestamp": 1,
+  "int_sel_none": 0,
+  "int_sel_interrupt": 1
+}
