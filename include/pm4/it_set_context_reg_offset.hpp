@@ -4,8 +4,8 @@
 
 namespace pm4 {
 struct ItSetContextRegOffsetDef {
-    static constexpr std::uint8_t opcode = 0x4f;
+    static constexpr std::uint8_t opcode = 0x6b;
     static constexpr std::string_view name = "IT_SET_CONTEXT_REG_OFFSET";
-    static constexpr std::string_view desc = "Write context register relative to dynamic register bank base";
+    static constexpr std::string_view desc = "Set base offset index for subsequent context register writes";
 };
 }
