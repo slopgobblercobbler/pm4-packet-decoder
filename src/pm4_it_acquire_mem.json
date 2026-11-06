@@ -1,0 +1,6 @@
+{
+  "it_opcode": "IT_ACQUIRE_MEM",
+  "opcode_val": 88,
+  "category": "cache_coherence",
+  "description": "GPU memory acquire and cache invalidation packet"
+}
