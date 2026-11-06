@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_INDEX_TYPE",
+  "opcode_id": "0x2A",
+  "index_type_16bit": 0,
+  "index_type_32bit": 1
+}
