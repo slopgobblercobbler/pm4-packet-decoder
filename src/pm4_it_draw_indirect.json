@@ -1,0 +1,9 @@
+{
+  "opcode": "IT_DRAW_INDIRECT",
+  "opcode_hex": "0x24",
+  "args_size_dwords": 4,
+  "vertex_count_offset": 0,
+  "instance_count_offset": 4,
+  "first_vertex_offset": 8,
+  "first_instance_offset": 12
+}
