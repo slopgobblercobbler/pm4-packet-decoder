@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_DISPATCH_MESH_INDIRECT_MULTI",
+  "opcode_id": "0x4C",
+  "supports_multi_dispatch": true,
+  "pipeline_type_mesh": true
+}
