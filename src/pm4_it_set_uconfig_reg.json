@@ -1,6 +1,6 @@
 {
-  "opcode": "IT_SET_UCONFIG_REG",
-  "opcode_hex": "0x79",
-  "uconfig_reg_base": "0xC000",
-  "index_mask": "0xFFFF"
+  "it_opcode": "IT_SET_UCONFIG_REG",
+  "opcode_val": 121,
+  "category": "uconfig_registers",
+  "description": "Direct user config register block write opcode"
 }
