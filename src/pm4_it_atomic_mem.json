@@ -1,0 +1,10 @@
+{
+  "opcode": "IT_ATOMIC_MEM",
+  "opcode_id": "0x1E",
+  "atomic_op_add": 0,
+  "atomic_op_sub": 1,
+  "atomic_op_smin": 2,
+  "atomic_op_umin": 3,
+  "atomic_op_smax": 4,
+  "atomic_op_umax": 5
+}
