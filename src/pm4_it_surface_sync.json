@@ -1,0 +1,9 @@
+{
+  "opcode": "IT_SURFACE_SYNC",
+  "opcode_hex": "0x43",
+  "engine_sel_me": 0,
+  "engine_sel_pfp": 1,
+  "tc_clean_mask": "0x08",
+  "cb_clean_mask": "0x02",
+  "db_clean_mask": "0x04"
+}
