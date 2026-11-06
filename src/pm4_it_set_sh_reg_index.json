@@ -1,5 +1,5 @@
 {
-  "opcode": "IT_SET_SH_REG_INDEX",
-  "opcode_id": "0x9B",
-  "index_mask": "0x0000000F"
+  "opcode": 155,
+  "name": "IT_SET_SH_REG_INDEX",
+  "index_mode": 1
 }
