@@ -1,6 +1,6 @@
 {
-  "opcode": "IT_INDEX_TYPE",
-  "opcode_id": "0x2A",
-  "index_type_16bit": 0,
-  "index_type_32bit": 1
+  "it_opcode": "IT_INDEX_TYPE",
+  "opcode_val": 42,
+  "category": "geometry",
+  "description": "Specifies 16-bit or 32-bit index buffer element size"
 }
