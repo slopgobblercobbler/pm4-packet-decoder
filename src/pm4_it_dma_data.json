@@ -1,0 +1,8 @@
+{
+  "opcode": "IT_DMA_DATA",
+  "opcode_hex": "0x50",
+  "src_sel_register": 0,
+  "src_sel_memory": 1,
+  "dst_sel_memory": 0,
+  "dst_sel_register": 1
+}
