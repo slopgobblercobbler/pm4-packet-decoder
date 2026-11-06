@@ -1,0 +1,10 @@
+{
+  "opcode": "IT_DRAW_INDEX_INDIRECT",
+  "opcode_hex": "0x25",
+  "args_size_dwords": 5,
+  "index_count_offset": 0,
+  "instance_count_offset": 4,
+  "first_index_offset": 8,
+  "vertex_offset_offset": 12,
+  "first_instance_offset": 16
+}
