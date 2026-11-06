@@ -1,0 +1,5 @@
+{
+  "opcode": 84,
+  "name": "IT_INDEX_ATTRIBUTES_INDIRECT",
+  "stride_alignment": 4
+}
