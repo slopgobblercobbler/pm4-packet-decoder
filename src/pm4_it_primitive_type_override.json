@@ -1,0 +1,6 @@
+{
+  "it_opcode": "IT_PRIMITIVE_TYPE_OVERRIDE",
+  "opcode_val": 114,
+  "category": "geometry",
+  "description": "Overrides active draw primitive topology"
+}
