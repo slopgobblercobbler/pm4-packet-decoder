@@ -1,6 +1,5 @@
 {
-  "opcode": "IT_INCREMENT_DE_COUNTER",
-  "opcode_id": "0x3D",
-  "min_dwords": 0,
-  "increments_hardware_semaphore": true
+  "opcode": 133,
+  "name": "IT_INCREMENT_DE_COUNTER",
+  "counter_id": 1
 }
