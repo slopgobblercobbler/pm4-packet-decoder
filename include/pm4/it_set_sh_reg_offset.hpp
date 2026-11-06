@@ -4,8 +4,8 @@
 
 namespace pm4 {
 struct ItSetShRegOffsetDef {
-    static constexpr std::uint8_t opcode = 0x50;
+    static constexpr std::uint8_t opcode = 0x69;
     static constexpr std::string_view name = "IT_SET_SH_REG_OFFSET";
-    static constexpr std::string_view desc = "Write shader register relative to dynamic register bank base";
+    static constexpr std::string_view desc = "Set base offset index for subsequent shader register writes";
 };
 }
