@@ -1,0 +1,5 @@
+{
+  "opcode": "IT_STRMOFFSET_DUMP",
+  "opcode_id": "0x34",
+  "requires_dest_gpu_addr": true
+}
