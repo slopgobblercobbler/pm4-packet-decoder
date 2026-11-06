@@ -1,0 +1,8 @@
+{
+  "opcode": "IT_COPY_DATA",
+  "opcode_id": "0x40",
+  "src_sel_mem": 0,
+  "src_sel_reg": 1,
+  "dst_sel_mem": 0,
+  "dst_sel_reg": 1
+}
