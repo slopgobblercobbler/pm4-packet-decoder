@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_PRIME_CACHE_ON_ENTRY",
+  "opcode_hex": "0x6E",
+  "sq_cache_policy": "LRU",
+  "l2_bypass": false
+}
