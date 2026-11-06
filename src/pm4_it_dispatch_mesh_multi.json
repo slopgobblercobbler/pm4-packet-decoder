@@ -1,0 +1,6 @@
+{
+  "opcode": 47,
+  "name": "IT_DISPATCH_MESH_INDIRECT_MULTI",
+  "max_dispatch_count": 4096,
+  "count_indirect_enable": true
+}
