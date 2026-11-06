@@ -1,7 +1,6 @@
 {
-  "opcode": "IT_CONTEXT_CONTROL",
-  "opcode_id": "0x28",
-  "load_enable_bit": 31,
-  "shadow_enable_bit": 30,
-  "supports_per_context_mask": true
+  "opcode": 40,
+  "name": "IT_CONTEXT_CONTROL",
+  "load_enable": 1,
+  "shadow_enable": 0
 }
