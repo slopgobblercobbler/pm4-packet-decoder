@@ -1,0 +1,8 @@
+{
+  "opcode": "IT_DISPATCH_INDIRECT",
+  "opcode_hex": "0x1F",
+  "args_size_dwords": 3,
+  "threadgroups_x_offset": 0,
+  "threadgroups_y_offset": 4,
+  "threadgroups_z_offset": 8
+}
