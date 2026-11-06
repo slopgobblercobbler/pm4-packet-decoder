@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_STRMOFFSET_ADD",
+  "opcode_id": "0x33",
+  "stream_index_mask": "0x03",
+  "supports_offset_accumulator": true
+}
