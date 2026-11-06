@@ -1,0 +1,5 @@
+{
+  "opcode": "IT_DISPATCH_TASKMESH_INDIRECT_MULTI",
+  "opcode_id": "0x4D",
+  "supports_task_graph": true
+}
