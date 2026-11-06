@@ -1,0 +1,6 @@
+{
+  "opcode": 34,
+  "name": "IT_OCCLUSION_QUERY",
+  "sample_count_offset": 0,
+  "target_format": "UINT64"
+}
