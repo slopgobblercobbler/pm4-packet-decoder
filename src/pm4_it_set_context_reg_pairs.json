@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_SET_CONTEXT_REG_PAIRS",
+  "opcode_id": "0xA9",
+  "allows_sparse_register_writes": true,
+  "dwords_per_pair": 2
+}
