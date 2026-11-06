@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_PFP_SYNC_ME",
+  "opcode_id": "0x42",
+  "min_dwords": 0,
+  "stalls_prefetch_parser": true
+}
