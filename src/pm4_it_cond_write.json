@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_COND_WRITE",
+  "opcode_id": "0x45",
+  "comparison_function_bits": "0x07",
+  "requires_source_and_dest_addr": true
+}
