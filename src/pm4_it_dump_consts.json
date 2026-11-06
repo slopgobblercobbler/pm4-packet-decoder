@@ -1,6 +1,6 @@
 {
   "opcode": "IT_DUMP_CONSTS",
-  "opcode_hex": "0x3A",
-  "offset_alignment_bytes": 16,
-  "max_dump_dwords": 4096
+  "opcode_id": "0x37",
+  "requires_dest_gpu_va": true,
+  "supports_shader_stage_mask": true
 }
