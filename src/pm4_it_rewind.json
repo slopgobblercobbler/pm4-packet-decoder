@@ -1,6 +1,5 @@
 {
-  "opcode": "IT_REWIND",
-  "opcode_id": "0x3E",
-  "min_dwords": 0,
-  "resets_read_pointer": true
+  "opcode": 60,
+  "name": "IT_REWIND",
+  "ring_buffer_loop": true
 }
