@@ -1,0 +1,5 @@
+{
+  "opcode": 99,
+  "name": "IT_LOAD_SH_REG_INDEX",
+  "base_address_alignment": 4
+}
