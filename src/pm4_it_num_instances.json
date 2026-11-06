@@ -1,0 +1,6 @@
+{
+  "opcode": 50,
+  "name": "IT_NUM_INSTANCES",
+  "instance_count_min": 1,
+  "instance_count_max": "0xffffffff"
+}
