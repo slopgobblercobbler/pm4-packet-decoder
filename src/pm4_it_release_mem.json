@@ -1,0 +1,7 @@
+{
+  "opcode": "IT_RELEASE_MEM",
+  "opcode_id": "0x3F",
+  "event_type_bottom_of_pipe": 0,
+  "cache_flush_and_inv_cb": "0x01",
+  "cache_flush_and_inv_db": "0x02"
+}
