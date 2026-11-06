@@ -1,0 +1,6 @@
+{
+  "opcode": "IT_SET_SH_REG_OFFSET",
+  "opcode_hex": "0x77",
+  "sh_reg_base": "0x2C00",
+  "index_mask": "0x0FFF"
+}
