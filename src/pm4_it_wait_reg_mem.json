@@ -1,12 +1,6 @@
 {
-  "opcode": "IT_WAIT_REG_MEM",
-  "opcode_id": "0x3C",
-  "comparison_function_bits": "0x07",
-  "func_always": 0,
-  "func_less": 1,
-  "func_less_equal": 2,
-  "func_equal": 3,
-  "func_not_equal": 4,
-  "func_greater_equal": 5,
-  "func_greater": 6
+  "opcode": 60,
+  "name": "IT_WAIT_REG_MEM",
+  "poll_interval_clocks": 32,
+  "function_equal": 3
 }
