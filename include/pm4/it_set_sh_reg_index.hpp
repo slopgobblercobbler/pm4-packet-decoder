@@ -4,8 +4,8 @@
 
 namespace pm4 {
 struct ItSetShRegIndexDef {
-    static constexpr std::uint8_t opcode = 0x4c;
+    static constexpr std::uint8_t opcode = 0x9b;
     static constexpr std::string_view name = "IT_SET_SH_REG_INDEX";
-    static constexpr std::string_view desc = "Write shader register using indexed addressing offset";
+    static constexpr std::string_view desc = "Set shader register with indexed offset resolution";
 };
 }
