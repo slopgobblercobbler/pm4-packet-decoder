@@ -1,5 +1,6 @@
 {
-  "opcode": "IT_WAIT_ON_CE_COUNTER",
-  "opcode_id": "0x5B",
-  "min_dwords": 0
+  "it_opcode": "IT_WAIT_ON_CE_COUNTER",
+  "opcode_val": 134,
+  "category": "sync",
+  "description": "Synchronizes DE execution waiting for CE counter"
 }
